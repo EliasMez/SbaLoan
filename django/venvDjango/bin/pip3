@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/apprenant/Documents/DEV IA/SBA/django/venvLoan/bin/python" "$0" "$@"
+'''exec' "/home/apprenant/Documents/DEV IA/SBA/django/venvDjango/bin/python" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

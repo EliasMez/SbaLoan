@@ -3,14 +3,19 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 import pickle as pkl
 import datetime
 
-# Ouverture d'une liste 
-with open('../Files/NAICS_list.pkl', 'rb') as fichier:
-    depickler = pkl.Unpickler(fichier)
-    NAICS_list = depickler.load()
+# # Ouverture d'une liste 
+# with open('NAICS_list.pkl', 'rb') as fichier:
+#     depickler = pkl.Unpickler(fichier)
+#     NAICS_list = depickler.load()
 
-with open('../Files/state_list.pkl', 'rb') as fichier:
-    depickler = pkl.Unpickler(fichier)
-    state_list = depickler.load()
+# with open('../Files/state_list.pkl', 'rb') as fichier:
+#     depickler = pkl.Unpickler(fichier)
+#     state_list = depickler.load()
+
+# DEBUT A SUPPRIMER
+NAICS_list = [('New', 'New Business'), ('Existing', 'Existing Business')]
+state_list = [('New', 'New Business'), ('Existing', 'Existing Business')]
+# FIN A SUPPRIMER
 
 class PredictionForm(forms.Form):
 
