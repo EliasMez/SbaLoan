@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{%load crispy_forms_tags%}
+
+
+<div class='container'>
+    <h1> Loan Form </h1>
+    <form method="POST">
+    {% csrf_token %}
+    {{form|crispy}}
+    <button type="submit"> SUBMIT </button>
+    </form>
+</div>
+
+{% endblock content %}

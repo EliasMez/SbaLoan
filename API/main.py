@@ -35,4 +35,4 @@ async def predict(payload:TextIn):
     class_idx=xgb.predict(new_payload)[0]
     return {'MIS_Status':int(class_idx)}
 
-# uvicorn main:app --reload
+# uvicorn main:app --reload --port 8001

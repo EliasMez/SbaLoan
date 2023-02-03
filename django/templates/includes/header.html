@@ -1,0 +1,6 @@
+{% url 'home' as home_url %}
+
+{% if request.path == home_url %}
+{% else %}
+    <li class="nav-item"><a href="{{home_url}}" class="nav-link active" aria-current="page">Home</a></li>
+{% endif %}

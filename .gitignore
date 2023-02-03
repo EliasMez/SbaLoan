@@ -279,5 +279,3 @@ poetry.toml
 
 *.csv
 *.json
-*.html
-*.pkl
